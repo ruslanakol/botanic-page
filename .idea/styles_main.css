@@ -1,0 +1,70 @@
+
+main {
+    background-color: black;
+}
+header {
+    display: inline-flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    color: white;
+}
+.logo-image {
+    height: 40px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.logo-name {
+    vertical-align: baseline;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+}
+.logo-name:hover {
+    color: darkslategrey;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 24px;
+    padding: 5px;
+    cursor: pointer;
+}
+ul {
+    list-style-type: none;
+    display: inline-flex;
+    gap: 30px;
+    margin-left: 350px;
+    font-size: 16px;
+    background-color: rgba(219, 219, 219, 0.5);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+li:hover {
+    text-decoration: underline;
+    color: darkslategrey;
+    cursor: pointer;
+}
+.sign-up-button {
+    margin-left: 400px;
+    background-color: #FADA7A;
+    cursor: pointer;
+    border-radius: 35px;
+    color: black;
+    padding: 0px 17px;
+}
+.main-photo-container {
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+    url(https://images.unsplash.com/photo-1658865696467-7e6de48922fe?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.second-container, .third-container, .forth-container, .fifth-container, .sixth-container, .seventh-container {
+    background-color: black;
+}
+
+
+
+
