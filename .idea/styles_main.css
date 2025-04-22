@@ -1,4 +1,6 @@
-
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 main {
     background-color: black;
 }
@@ -10,15 +12,15 @@ header {
     color: white;
 }
 .logo-image {
-    height: 40px;
+    height: 30px;
     padding: 10px;
     background-color: white;
-    border-radius: 20px;
-    margin-right: 10px;
+    border-radius: 40px;
+    margin-right: 2px;
 }
 .logo-name {
     vertical-align: baseline;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     padding: 5px;
     cursor: pointer;
@@ -27,7 +29,7 @@ header {
     color: darkslategrey;
     background-color: white;
     border-radius: 20px;
-    font-size: 24px;
+    font-size: 20px;
     padding: 5px;
     cursor: pointer;
 }
@@ -36,8 +38,8 @@ ul {
     display: inline-flex;
     gap: 30px;
     margin-left: 350px;
-    font-size: 16px;
-    background-color: rgba(219, 219, 219, 0.5);
+    font-size: 14px;
+    background-color: rgba(219, 219, 219, 0.4);
     padding: 10px 20px;
     border-radius: 20px;
 }
@@ -53,17 +55,68 @@ li:hover {
     border-radius: 35px;
     color: black;
     padding: 0px 17px;
+    font-weight: bold;
+    font-size: 14px;
 }
 .main-photo-container {
     height: 600px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
     url(https://images.unsplash.com/photo-1658865696467-7e6de48922fe?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-position: center;
+    color: white;
 }
 .second-container, .third-container, .forth-container, .fifth-container, .sixth-container, .seventh-container {
     background-color: black;
+    color: white;
 }
+h1 {
+    text-align: center;
+    font-family: "Bookman Old Style";
+    font-size: 50px;
+    padding-top: 80px;
+}
+.yellow-line {
+    border: 1px solid #FADA7A;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.main-p-center{
+    text-align: center;
+    font-size: 13px;
+}
+.video-number-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.call-us-now{
+    display: inline-flex;
+    align-items: center;
+}
+.video-p {
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 8px;
+}
+.video-play {
+    height: 25px;
+    padding-left: 5px;
+}
+.call-us-text{
+    margin-left: 20px;
+}
+.watch-our-video {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
 
 
 
