@@ -127,6 +127,10 @@ h1 {
     background-color: white;
     height: 20px;
     weight: 30%;
+    display: inline-flex;
+}
+.stars-rate {
+    color: black;
 }
 .stars-icon{
     height: 20px;
