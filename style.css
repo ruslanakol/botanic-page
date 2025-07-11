@@ -1,9 +1,91 @@
+/* fonts */
+@font-face {
+    font-family: 'CormorantGaramond';
+    src: url('./fonts/CormorantGaramond-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CormorantGaramond';
+    src: url('./fonts/CormorantGaramond-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CormorantGaramond';
+    src: url('./fonts/CormorantGaramond-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'CormorantGaramond';
+    src: url('./fonts/CormorantGaramond-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CormorantGaramond';
+    src: url('./fonts/CormorantGaramond-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CormorantGaramond';
+    src: url('./fonts/CormorantGaramond-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Класи для використання */
+.regular {
+    font-family: 'CormorantGaramond';
+    font-weight: 400;
+}
+
+.bold {
+    font-family: 'CormorantGaramond';
+    font-weight: 700;
+}
+
+.italic {
+    font-family: 'CormorantGaramond';
+    font-style: italic;
+}
+
+.light {
+    font-family: 'CormorantGaramond';
+    font-weight: 300;
+}
+
+.medium {
+    font-family: 'CormorantGaramond';
+    font-weight: 500;
+}
+
+.semibolditalic {
+    font-family: 'CormorantGaramond';
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+/* main */
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
 }
 main {
-    background-color: black;
+    background-color: #121912;
 }
+
+/* header */
 header {
     display: inline-flex;
     padding-left: 20px;
@@ -60,14 +142,14 @@ li:hover {
 }
 .main-photo-container {
     height: 600px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) , /*rgba(0, 0, 0, 1)*/ #121912),
     url(https://images.unsplash.com/photo-1658865696467-7e6de48922fe?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-position: center;
     color: white;
 }
  .third-container, .forth-container, .fifth-container, .sixth-container, .seventh-container {
-    background-color: black;
+    background-color: #121912;
     color: white;
 }
 .second-container{
@@ -103,10 +185,12 @@ h1 {
     border: 1px solid white;
     border-radius: 40px;
     padding: 8px;
+    vertical-align: baseline;
 }
 .video-play {
     height: 25px;
     padding-left: 5px;
+    margin-top: 2px;
 }
 .call-us-text{
     margin-left: 20px;
@@ -114,7 +198,11 @@ h1 {
 .watch-our-video {
     margin-top: 10px;
     padding-bottom: 10px;
+    vertical-align: baseline;
+    cursor: pointer;
 }
+
+/* second container */
 .second-container-background{
     background: linear-gradient(#123524, #1A4D2E);
     height: 400px;
@@ -122,23 +210,173 @@ h1 {
     border-radius: 50px;
     margin-right: auto;
     margin-left: auto;
+
 }
 .stars {
+    margin-top: 60px;
     background-color: white;
     height: 20px;
     weight: 30%;
     display: inline-flex;
+    padding: 10px;
+    vertical-align: baseline;
+    margin-left: 40px;
+    border-radius: 20px;
+    align-items: center;
 }
 .stars-rate {
-    color: black;
+    color: #004030;
+    vertical-align: baseline;
+    font-weight: 600;
 }
 .stars-icon{
     height: 20px;
 }
-.third-container {
-    margin-top: 100px;
+.review {
+    margin-top: 20px;
+    padding-left: 40px;
+    width: 46%;
+
+}
+.green-line {
+    margin-top: 20px;
+    height: 1px;
+    background-color: #819067;
+    opacity: 0.7;
+    width: 47%;
+    margin-left: 30px;
+}
+.author {
+    display: inline-flex;
+}
+.author-image {
+
+    margin-top: 50px;
+    margin-left: 40px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.author-text {
+    margin-top: 25px;
+    margin-left: 30px;
+    vertical-align: baseline;
+}
+.author-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+.plant-image {
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 80%;
+    height: 470px;
+    transition: transform 0.2s ease;
+    z-index: 2;
+}
+.plant-image:hover {
+    transform: scale(1.06);
+}
+.lightgreen-circle {
+    display: flex;
+    position: absolute;
+    right: 6.5%;
+    top: 104%;
+    height: 250px;
+    width: 640px;
+    background-color: #819067;
+    opacity: 0.3;
+    border-radius: 80% 0 50px 0;
+    z-index: 1;
+
 }
 
+
+
+/* third container */
+.third-container {
+    margin-top: 130px;
+    margin-left: 90px;
+    margin-bottom: 90px;
+    display: inline-flex;
+}
+.third-image {
+    border-radius: 40px;
+
+}
+.right-side-container-third {
+    margin-left: 50px;
+    width: 46%;
+}
+.third-container-h2 {
+    font-size: 70px;
+    margin-top: 20px;
+    font-family: "CormorantGaramond", sans-serif;
+}
+.learn-more {
+    margin-top: 40px;
+    width: 25%;
+    border-radius: 30px;
+    height: 40px;
+
+    background-color: #FADA7A;
+    color: black;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+.learn-more-p {
+    vertical-align: baseline;
+    font-weight: bold;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+.green-25 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 38%;
+    top: 191%;
+    background-color: #1A4D2E;
+    border-radius: 20px;
+    height: 100px;
+    width: 80px;
+    padding: 40px 30px;
+    text-align: center;
+}
+.green-25-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont-25 {
+    font-size: 60px;
+    color: #FADA7A;
+    font-family: "CormorantGaramond", sans-serif;
+    display: flex;
+    position: absolute;
+    right: 30%;
+    bottom: 25%;
+}
+.experience {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: absolute;
+    right: 18%;
+    bottom: 23%;
+    color: white;
+}
+
+/* forth container */
+.forth-conteiner-h2 {
+    display: flex;
+    justify-content: center;
+    font-family: "CormorantGaramond", sans-serif;
+    font-size: 70px;
+}
 
 
 
